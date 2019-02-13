@@ -7,7 +7,7 @@ Things you may want to cover:
 
 * Ruby version: ruby 2.3.5
 
-* System dependencies: Bootstrap-sass, jquery-rails, simple_form
+* System dependencies: Bootstrap-sass, jquery-rails, simple_form. update gem sqlite3 -> 1.3.6,
 
 * Configuration
 

@@ -1,0 +1,33 @@
+.navbar-fiorenza {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  padding: 16px 24px;
+}
+
+.navbar-fiorenza .brand {
+  width: 40px;
+}
+
+.navbar-fiorenza .navbar-fiorenza-actions {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-fiorenza .navbar-fiorenza-actions .navbar-fiorenza-link {
+  margin-left: 24px;
+  color: #999999;
+}
+.navbar-fiorenza .navbar-fiorenza-actions .navbar-fiorenza-link:hover {
+  color: #151515;
+}
+
+
+.navbar-fiorenza .navbar-fiorenza-actions .avatar {
+  margin-left: 24px;
+}
+
+.navbar-fiorenza .dropdown-toggle {
+  cursor: pointer;
+}
