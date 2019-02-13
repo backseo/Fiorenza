@@ -5,9 +5,9 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: ruby 2.3.5
 
-* System dependencies
+* System dependencies: Bootstrap-sass, jquery-rails, simple_form
 
 * Configuration
 
