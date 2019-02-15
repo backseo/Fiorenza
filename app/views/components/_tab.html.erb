@@ -1,12 +1,31 @@
+<div class="tabs hidden-xs hidden-sm">
 
-<ul class="list-inline tabs-underlined">
-  <li>
-    <a href="#" class="tab-underlined active">Bookings</a>
-  </li>
-  <li>
-    <a href="#" class="tab-underlined">Requests</a>
-  </li>
-  <li>
-    <a href="#" class="tab-underlined">Conversations</a>
-  </li>
-</ul>
+   <div class="tabs-item dropdown">
+    <span>Simone Cenedese<span>
+      <div class="dropdown-content">
+         <span><%= link_to 'Histoire' %></span>
+          <hr>
+         <span><%= link_to 'Rencontre', "#.html" %></span>
+    </div>
+  </div>
+
+  <div class="tabs-item dropdown">
+    <span>Galleries<span>
+      <div class="dropdown-content">
+         <span><%= link_to 'Objets uniques' %></span>
+          <hr>
+         <span><%= link_to 'Lampes', "#.html" %></span>
+    </div>
+  </div>
+
+  <div class="tabs-item dropdown">
+    <span><%= link_to 'A propos', 'about.html', {style: 'color: orange' } %></span>
+  </div>
+
+  <div class="tabs-item dropdown">
+    <span><%= link_to 'Contact', 'contact.html', {style: 'color: orange' } %></span>
+  </div>
+
+
+</div><!-- Fin tabs -->
+
