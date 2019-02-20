@@ -25,6 +25,7 @@
   -o-transition: all 0.5s ease 0.1s;
   flex: 1 0 auto;
   border-radius: 4px;
+   color: white;
 }
 
 .dropdown {
@@ -52,7 +53,7 @@
 }
 
 .dropdown-content a {
-  color: white;
+  color: orange;
   text-decoration: none;
 }
 

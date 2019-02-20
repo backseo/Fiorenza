@@ -21,7 +21,7 @@
   // font-family: 'Tangerine', cursive;
   // font-family: 'Charm', cursive;
 body {
-  background-color: #123;
+  background-color: black;
   color: white;
 }
 
@@ -32,4 +32,9 @@ h1,h2,h3,h4,h5,h6 {
 p {
   font-family: 'Charm', cursive;
   font-size: 1.4em;
+  text-indent: 3em;
+}
+
+p::first-letter {
+  font-size: 140%;
 }
