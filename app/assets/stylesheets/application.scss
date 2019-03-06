@@ -15,22 +15,23 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import "pages";
 
-@import url('https://fonts.googleapis.com/css?family=Charm|Tangerine:700');
-  // font-family: 'Tangerine', cursive;
-  // font-family: 'Charm', cursive;
+
+@import url('https://fonts.googleapis.com/css?family=Charm|Lora');
+  // nav-font-family: 'Charm';
+  // body-font-family: 'Lora';
+
 body {
   background-color: black;
   color: white;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Charm', cursive;
+  font-family: 'Lora', cursive;
 }
 
 p {
-  font-family: 'Charm', cursive;
+  font-family: 'Lora', cursive;
   font-size: 1.4em;
   text-indent: 3em;
 }
