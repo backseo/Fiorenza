@@ -1,21 +1,22 @@
 /* Main navbar */
 .navbar-fiorenza {
   position: relative;
-  z-index: 1000;
-  width: 100%;
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   background-color: black;
   transition: all 0.3s ease;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   font-family: 'Charm', cursive;
+  text-transform: uppercase;
+  z-index: 1000;
 }
 
 /* Logo */
 .navbar-fiorenza-brand img {
-  height: 60px;  ;
+  height: 60px;
+  left: 0px;
+  z-index: -1;
 }
 
 /* User Avatar */
@@ -38,35 +39,23 @@
   padding: 0 20px;
 }
 
-
-
 /* Dropdown menu */
-.navbar-fiorenza-dropdown-menu {
+.navbar-fiorenza-dropdown-menu li {
   margin-top: 15px;
   box-shadow: 1px 1px 4px purple;
-  border-color: #E6E6E6;
+  background: green;
 }
 .navbar-fiorenza-dropdown-menu li > a {
   transition: color 0.3s ease;
   font-weight: lighter !important;
-  color: black !important;
+  color: white !important;
   font-size: 15px !important;
   line-height: 22px !important;
   padding: 10px 20px;
 }
 .navbar-fiorenza-dropdown-menu li > a:hover {
   background: transparent !important;
-  color: red !important;
+  color: blue !important;
+  transition: all ease 800ms;
 }
-.navbar-fiorenza-dropdown-menu:before {
-  content: ' ';
-  height: 10px;
-  width: 10px;
-  position: absolute;
-  right: 10px;
-  top: -6px;
-  background-color: black;
-  transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
-}
+

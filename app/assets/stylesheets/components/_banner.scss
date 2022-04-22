@@ -1,16 +1,160 @@
 .banner {
-  position: relative;
-  display: block;
-  background: url(images/bg_banner.jpg);
+  background-image: url(bg_banner.jpg);
   background-size: cover;
-  border: 1px red solid;
+  background-origin: center;
   height: 80vh;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 .banner-content {
   position: relative;
+  text-align: center;
   top: 150px;
+}
+
+.banner-content h1 {
+  text-transform: uppercase;
+  cursor: pointer;
   font-weight: 900;
+  font-family: 'Lora';
+  opacity: 1;
+  transition: all ease 1500ms;
+}
+
+.banner-content h1:hover {
+  transform: scale(1.3);
+  font-weight: 0;
+  color: rgba(200,156,255,0.3);
+  opacity: 1;
+  transition: all ease 1500ms;
+}
+
+//triangle orange
+.banner-content h1:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-left: 6px rgba(200,156,255,0.3) solid;
+  border-top: 20px transparent solid;
+  border-right: 20px transparent solid;
+  border-bottom: 20px transparent solid;
+  left: 1%;
+  top: 0px;
+  transition: all ease 1500ms;
+  opacity: 1;
+}
+
+//triangle orange -> rouge
+.banner-content h1:hover:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-left: 20px orange solid;
+  border-top: 20px transparent solid;
+  border-right: 20px transparent solid;
+  border-bottom: 20px transparent solid;
+  left: 22%;
+  transform: scale(0.5);
+  transition: all ease 1500ms;
+  opacity: 0.1;
+}
+
+.banner-content h1:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-left: 20px transparent solid;
+  border-top: 20px transparent solid;
+  border-right: 6px rgba(200,156,255,0.3) solid;
+  border-bottom: 20px transparent solid;
+  right: 1%;
+  transition: all ease 1500ms;
+  opacity: 1;
+}
+
+.banner-content h1:hover:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-left: 20px transparent solid;
+  border-top: 20px transparent solid;
+  border-right: 20px orange solid;
+  border-bottom: 20px transparent solid;
+  right: 22%;
+  transform: scale(0.5);
+  transition: all ease 1500ms;
+  opacity: 0.1;
+
+}
+
+.banner-content h3 {
+  color: rgba(200,156,255,0.3);
+  cursor: pointer;
+  transition: all ease-in-out 500ms;
+}
+
+.banner-content h3:hover {
+  color: rgba(255,255,255,0.9);
+  transition: all ease-in-out 500ms;
+}
+
+.banner-content h3:before {
+  content: "";
+  position: relative;
+  margin: 0 auto;
+  top: 30px;
+  display: block;
+  width: 90%;
+  height: 30px;
+  background: linear-gradient(
+    to bottom,
+    rgba(174,188,191,0.1) 0%,
+    rgba(110,119,116,0.1) 50%,
+    rgba(10,14,10,0.1) 51%,
+    rgba(10,8,9,0.3) 100%);
+  border-top: 2px rgba(200,156,255,0.3) solid;
+  border-bottom: 2px rgba(200,156,255,0.3) solid;
+  border-left: 2px rgba(200,156,255,0.1) solid;
+  border-right: 2px rgba(200,156,255,0.1) solid;
+  border-radius: 40px;
+  opacity: 0.9;
+  z-index: -1;
+  transition: all ease-in-out 1500ms;
+}
+
+.banner-content h3:hover:before {
+  content: "";
+  position: relative;
+  margin: 0 auto;
+  top: 30px;
+  display: block;
+  width: 50%;
+  height: 30px;
+  background: linear-gradient(
+    to bottom,
+    rgba(174,188,191,0.1) 0%,
+    rgba(110,119,116,0.1) 50%,
+    rgba(10,14,10,0.1) 51%,
+    rgba(10,8,9,0.3) 100%);
+  border-top: 2px rgba(200,156,255,0.3) solid;
+  border-bottom: 2px rgba(200,156,255,0.3) solid;
+  border-left: 2px rgba(200,156,255,0.1) solid;
+  border-right: 2px rgba(200,156,255,0.1) solid;
+  border-radius: 40px;
+  opacity: 0.6;
+  z-index: -1;
+  line-height: 2em;
+  transition: all ease-in-out 1200ms;
+}
+
+@media (max-width: 320px) {
+  .banner-content h1:hover:before {
+    opacity: 0;
+      }
+  .banner-content h1:hover:after {
+    opacity: 0;
+     }
 }
